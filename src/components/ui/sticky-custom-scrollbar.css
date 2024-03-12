@@ -1,0 +1,40 @@
+.custom-scrollbar {
+  overflow-y: auto;
+  /* scrollbar-width: thin; */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 9px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Style for custom scrollbar track */
+.custom-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+  width: 9px;
+}
+
+/* Style for custom scrollbar thumb */
+.custom-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+/* Hover style for custom scrollbar thumb */
+.custom-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Increase height of custom scrollbar */
+.custom-scrollbar-thumb {
+  height: 16px;
+}
