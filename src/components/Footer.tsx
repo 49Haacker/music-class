@@ -14,6 +14,7 @@ const Footer = () => {
               fostering a vibrant community of musicians.
             </p>
           </div>
+
           {/* quick links */}
           <div className="sm:flex sm:flex-col sm:items-end lg:block">
             <h2 className="text-white text-lg font-semibold mb-4">
