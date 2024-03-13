@@ -3,7 +3,7 @@ import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { Button } from "./ui/moving-border";
 import { SparklesCore } from "./ui/sparkles";
-import { TypewriterEffectRepeater } from "./ui/typewriter-effect";
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 
 const HeroSection = () => {
   const words = [
@@ -34,9 +34,9 @@ const HeroSection = () => {
         />
 
         <div className="mt-28 p-4">
-          <TypewriterEffectRepeater
+          <TypewriterEffectSmooth
             words={words}
-            className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400"
+            className="mt-20 md:mt-0  bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400"
           />
 
           <p className=" mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto">

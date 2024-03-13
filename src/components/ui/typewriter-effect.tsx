@@ -139,7 +139,12 @@ export const TypewriterEffectSmooth = ({
   };
 
   return (
-    <div className={cn("flex space-x-1 my-6", className)}>
+    <div
+      className={cn(
+        "flex items-center justify-center space-x-1 my-6 max-[449px]:p-2",
+        className
+      )}
+    >
       <motion.div
         className="overflow-hidden pb-2"
         initial={{
@@ -155,7 +160,7 @@ export const TypewriterEffectSmooth = ({
         }}
       >
         <div
-          className="text-xs sm:text-base md:text-xl lg:text:3xl xl:text-5xl font-bold"
+          className="text-4xl md:text-7xl font-bold sm:text-base lg:text:4xl xl:text-5xl max-[449px]:text-2xl"
           style={{
             whiteSpace: "nowrap",
           }}
@@ -183,37 +188,4 @@ export const TypewriterEffectSmooth = ({
       ></motion.span>
     </div>
   );
-};
-
-interface Word {
-  text: string;
-  className?: string;
-}
-
-interface TypewriterEffectRepeaterProps {
-  words: Word[];
-  className?: string;
-  cursorClassName?: string;
-}
-
-export const TypewriterEffectRepeater: React.FC<
-  TypewriterEffectRepeaterProps
-> = ({ words, className, cursorClassName }) => {
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsVisible((prev) => !prev);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  return isVisible ? (
-    <TypewriterEffect
-      words={words}
-      className={className}
-      cursorClassName={cursorClassName}
-    />
-  ) : null;
 };
