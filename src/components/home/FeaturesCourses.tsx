@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import React from "react";
-import courseData from "../data/music_courses.json";
-import { BackgroundGradient } from "./ui/background-gradient";
+import courseData from "../../data/music_courses.json";
+import { BackgroundGradient } from "../ui/background-gradient";
 
 // make the data type your
 interface Courses {

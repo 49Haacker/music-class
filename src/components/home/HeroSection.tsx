@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React from "react";
-import { Spotlight } from "./ui/Spotlight";
-import { Button } from "./ui/moving-border";
-import { SparklesCore } from "./ui/sparkles";
-import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
+import { Spotlight } from "../ui/Spotlight";
+import { Button } from "../ui/moving-border";
+import { SparklesCore } from "../ui/sparkles";
+import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
 
 const HeroSection = () => {
   const words = [

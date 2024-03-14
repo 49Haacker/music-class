@@ -1,10 +1,10 @@
-import FeaturesCourses from "@/components/FeaturesCourses";
-import Footer from "@/components/Footer";
-import HeroSection from "@/components/HeroSection";
-import Instructors from "@/components/Instructors";
-import MusicSchoolTestimonials from "@/components/TestimonialCards";
-import UpcommingWebinar from "@/components/UpcommingWebinar";
-import WhyChoseUs from "@/components/WhyChoseUs";
+import FeaturesCourses from "@/components/home/FeaturesCourses";
+import Footer from "@/components/home/Footer";
+import HeroSection from "@/components/home/HeroSection";
+import Instructors from "@/components/home/Instructors";
+import MusicSchoolTestimonials from "@/components/home/TestimonialCards";
+import UpcommingWebinar from "@/components/home/UpcommingWebinar";
+import WhyChoseUs from "@/components/home/WhyChoseUs";
 import React from "react";
 
 const page = () => {
